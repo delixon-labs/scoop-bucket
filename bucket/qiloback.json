@@ -5,24 +5,24 @@
   "homepage": "https://qiloback.dev",
   "license": {
     "identifier": "FSL-1.1-ALv2",
-    "url": "https://github.com/delixon-labs/qiloback-core/blob/main/LICENSE"
+    "url": "https://github.com/delixon-labs/delixon-qiloback/blob/main/LICENSE"
   },
   "architecture": {
     "64bit": {
-      "url": "https://github.com/delixon-labs/qiloback-core/releases/download/v0.3.3/qiloback-cli-win32-x64.exe",
+      "url": "https://github.com/delixon-labs/delixon-qiloback/releases/download/v0.3.3/qiloback-cli-win32-x64.exe",
       "hash": "sha256:23a2c7669672581dc3366f67a6469a0913677fd939f7dc4ae50d8d590729de3c",
       "bin": [["qiloback-cli-win32-x64.exe", "qiloback"]]
     }
   },
   "checkver": {
-    "github": "https://github.com/delixon-labs/qiloback-core"
+    "github": "https://github.com/delixon-labs/delixon-qiloback"
   },
   "autoupdate": {
     "architecture": {
       "64bit": {
-        "url": "https://github.com/delixon-labs/qiloback-core/releases/download/v$version/qiloback-cli-win32-x64.exe",
+        "url": "https://github.com/delixon-labs/delixon-qiloback/releases/download/v$version/qiloback-cli-win32-x64.exe",
         "hash": {
-          "url": "https://github.com/delixon-labs/qiloback-core/releases/download/v$version/SHA256SUMS",
+          "url": "https://github.com/delixon-labs/delixon-qiloback/releases/download/v$version/SHA256SUMS",
           "regex": "^([a-f0-9]{64})\\s+qiloback-cli-win32-x64\\.exe$"
         }
       }
