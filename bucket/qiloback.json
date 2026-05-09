@@ -1,0 +1,14 @@
+{
+  "$comment": "Placeholder Scoop manifest — populated by the release-package-managers workflow on the first v*.*.* tag. The version field carries 0.0.0-placeholder so 'scoop install' refuses gracefully until the real release lands.",
+  "version": "0.0.0-placeholder",
+  "description": "Backend manufacturer — DSL → FastAPI + PostgreSQL generator. Awaiting first release.",
+  "homepage": "https://qiloback.dev",
+  "license": {
+    "identifier": "FSL-1.1-ALv2",
+    "url": "https://github.com/delixon-labs/delixon-qiloback/blob/main/LICENSE"
+  },
+  "notes": "QiloBack has not been released to this bucket yet. Wait for the first v*.*.* tag on github.com/delixon-labs/qiloback-core, then 'scoop update && scoop install qiloback'.",
+  "checkver": {
+    "github": "https://github.com/delixon-labs/delixon-qiloback"
+  }
+}
