@@ -1,14 +1,31 @@
 {
-  "$comment": "Placeholder Scoop manifest — populated by the release-package-managers workflow on the first v*.*.* tag. The version field carries 0.0.0-placeholder so 'scoop install' refuses gracefully until the real release lands.",
-  "version": "0.0.0-placeholder",
-  "description": "Backend manufacturer — DSL → FastAPI + PostgreSQL generator. Awaiting first release.",
+  "$comment": "Scoop manifest for QiloBack — Windows package manager support. Lives here as a template; the canonical copy is hosted in the delixon-labs/scoop-bucket repository (or directly in this repo's gh-pages branch, depending on hosting choice). Placeholders 0.3.3 and 23a2c7669672581dc3366f67a6469a0913677fd939f7dc4ae50d8d590729de3c are replaced by the release-cli-binary workflow on tag push.",
+  "version": "0.3.3",
+  "description": "Backend manufacturer — DSL → FastAPI + PostgreSQL generator.",
   "homepage": "https://qiloback.dev",
   "license": {
     "identifier": "FSL-1.1-ALv2",
-    "url": "https://github.com/delixon-labs/delixon-qiloback/blob/main/LICENSE"
+    "url": "https://github.com/delixon-labs/qiloback-core/blob/main/LICENSE"
   },
-  "notes": "QiloBack has not been released to this bucket yet. Wait for the first v*.*.* tag on github.com/delixon-labs/qiloback-core, then 'scoop update && scoop install qiloback'.",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/delixon-labs/qiloback-core/releases/download/v0.3.3/qiloback-cli-win32-x64.exe",
+      "hash": "sha256:23a2c7669672581dc3366f67a6469a0913677fd939f7dc4ae50d8d590729de3c",
+      "bin": [["qiloback-cli-win32-x64.exe", "qiloback"]]
+    }
+  },
   "checkver": {
-    "github": "https://github.com/delixon-labs/delixon-qiloback"
+    "github": "https://github.com/delixon-labs/qiloback-core"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/delixon-labs/qiloback-core/releases/download/v$version/qiloback-cli-win32-x64.exe",
+        "hash": {
+          "url": "https://github.com/delixon-labs/qiloback-core/releases/download/v$version/SHA256SUMS",
+          "regex": "^([a-f0-9]{64})\\s+qiloback-cli-win32-x64\\.exe$"
+        }
+      }
+    }
   }
 }
