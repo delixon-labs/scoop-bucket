@@ -1,6 +1,6 @@
 {
-  "$comment": "Scoop manifest for QiloBack — Windows package manager support. Lives here as a template; the canonical copy is hosted in the delixon-labs/scoop-bucket repository (or directly in this repo's gh-pages branch, depending on hosting choice). Placeholders 0.3.3 and 23a2c7669672581dc3366f67a6469a0913677fd939f7dc4ae50d8d590729de3c are replaced by the release-cli-binary workflow on tag push.",
-  "version": "0.3.3",
+  "$comment": "Scoop manifest for QiloBack — Windows package manager support. Lives here as a template; the canonical copy is hosted in the delixon-labs/scoop-bucket repository (or directly in this repo's gh-pages branch, depending on hosting choice). Placeholders 0.3.8 and 5b8931be2cfd2ccd6d06355b7616fb1cf9e133340e4a7e608552702aab5fd0c3 are replaced by the release-cli-binary workflow on tag push.",
+  "version": "0.3.8",
   "description": "Backend manufacturer — DSL → FastAPI + PostgreSQL generator.",
   "homepage": "https://qiloback.dev",
   "license": {
@@ -9,8 +9,8 @@
   },
   "architecture": {
     "64bit": {
-      "url": "https://github.com/delixon-labs/delixon-qiloback/releases/download/v0.3.3/qiloback-cli-win32-x64.exe",
-      "hash": "sha256:23a2c7669672581dc3366f67a6469a0913677fd939f7dc4ae50d8d590729de3c",
+      "url": "https://github.com/delixon-labs/delixon-qiloback/releases/download/v0.3.8/qiloback-cli-win32-x64.exe",
+      "hash": "sha256:5b8931be2cfd2ccd6d06355b7616fb1cf9e133340e4a7e608552702aab5fd0c3",
       "bin": [["qiloback-cli-win32-x64.exe", "qiloback"]]
     }
   },
